@@ -9,12 +9,12 @@
 
 @font-face {
     font-family: HarryPotter;
-    src: url(./font/HarryPotter/HARRYP__.TTF);
+    src: url("../font/HarryPotter/HARRYP__.TTF");
 }
 
 @font-face {
     font-family: Quantom;
-    src: url(./font/quantum_4/Quantum.otf);
+    src:url(../font/quantum_4/Quantum.otf);
 }
 
 * {
@@ -64,7 +64,7 @@ main .filme_principal {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url("./img/Harry_Potter/capa_a_pedra_filosofal.jpg");
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url(https://www.copeltelecom.com/site/wp-content/uploads/2020/09/Curiosidades-em-Harry-Potter-e-a-Pedra-Filosofal_.jpg);
     height: 400px;
     background-size: cover;
     background-position: center;   
