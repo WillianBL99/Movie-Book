@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBook</title>
+    
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/events.css">
+    
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">MovieBook</h2>
+            <nav class="option_menu">
+                <a href="#">Início</a>
+                <a href="#filmes">Filmes</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="img_background" class="filme_principal">
+            <div class="container">
+                <h2 class="titulo">Harry Potter</span></h2>
+                <h3 class="titulo_describe">e a pedra Filosofal</h3>
+                <p class="descricao">A história segue Harry Potter, um garoto que completa 11 anos quando descobre que é um mágico, para o qual ele é enviado para a Escola de Magia e Magia de Hogwarts para começar seu treinamento como tal.</p>
+                <div class="botoes">
+                    <button role="button" onclick="assistir()" class="botao">
+                        <i class="fas fa-play"></i>ASSISTIR AGORA</button>
+                    <button role="button" onclick="ouvir()" class="botao">
+                        <i class="fas fa-volume-up"></i></i>OUVIR AGORA</button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>MAIS OPÇÕES</button>
+                </div>
+            </div>
+            <div class="container_audiolivro">
+                <div class="container">
+                    <h4 class="audio_versao">Disponível também em audiolivro.</h4>
+                    <img src="/img/Harry_Potter/LIVRO A PEDRA FILOSOFAL.jpg" alt="">
+                    <h4 class="duracao">Duração: 8:31:07</h4>
+                </div>
+                <div class="container">
+                    <button role="button" onclick="ouvir()" class="botao">
+                        <i class="fas fa-volume-up"></i></i>OUVIR AGORA</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="filmes" class="carrocel_filmes">
+        <!--Harry Potter-->
+        <div class="owl-carousel owl-theme linhas">
+            <div class="item">
+                <div id="id1-1" class="item_interno" style="background-image: url(/img/Harry_Potter/a_pedra_filosofal.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"   onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-2" class="item_interno" style="background-image: url(/img/Harry_Potter/a_camara_secreta.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"  onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-1" class="item_interno" style="background-image: url(/img/Harry_Potter/o_prisioneiro_de_azkaban.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle" onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-2" class="item_interno" style="background-image: url(/img/Harry_Potter/o_calice_de_fogo.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"  onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-1" class="item_interno" style="background-image: url(/img/Harry_Potter/a_ordem_da_fenix.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"   onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-2" class="item_interno" style="background-image: url(/img/Harry_Potter/o_enigma_do_principe.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"  onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-1" class="item_interno" style="background-image: url(/img/Harry_Potter/reliquias_da_morte_1.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle" onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-2" class="item_interno" style="background-image: url(/img/Harry_Potter/reliquias_da_morte_2.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"  onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!--Jogos Vorazes-->
+        <div class="owl-carousel owl-theme linhas">
+            <div class="item">
+                <div id="id1-1" class="item_interno" style="background-image: url(/img/Jogos_vorazes/que_a_sorte_esteja_sempre_ao_seu_lado.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"   onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-2" class="item_interno" style="background-image: url(/img/Jogos_vorazes/em_chamas.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"  onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-1" class="item_interno" style="background-image: url(/img/Jogos_vorazes/a_esperanca_1.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle" onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-2" class="item_interno" style="background-image: url(/img/Jogos_vorazes/a_experanca_o_final.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"  onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-1" class="item_interno" style="background-image: url(/img/Jogos_vorazes/que_a_sorte_esteja_sempre_ao_seu_lado.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"   onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-2" class="item_interno" style="background-image: url(/img/Jogos_vorazes/em_chamas.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"  onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-1" class="item_interno" style="background-image: url(/img/Jogos_vorazes/a_esperanca_1.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle" onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-2" class="item_interno" style="background-image: url(/img/Jogos_vorazes/a_experanca_o_final.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"  onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!--senhor dos aneis-->
+        <div class="owl-carousel owl-theme linhas">
+            <div class="item">
+                <div id="id1-1" class="item_interno" style="background-image: url(/img/senhor_dos_aneis/a_sociedade_do_anel_2001.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"   onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-2" class="item_interno" style="background-image: url(/img/senhor_dos_aneis/as_duas_torres_2002.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"  onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-1" class="item_interno" style="background-image: url(/img/senhor_dos_aneis/o_retorno_do_rei_2003.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle" onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-1" class="item_interno" style="background-image: url(/img/senhor_dos_aneis/a_sociedade_do_anel_2001.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"   onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-2" class="item_interno" style="background-image: url(/img/senhor_dos_aneis/as_duas_torres_2002.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"  onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-1" class="item_interno" style="background-image: url(/img/senhor_dos_aneis/o_retorno_do_rei_2003.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle" onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-1" class="item_interno" style="background-image: url(/img/senhor_dos_aneis/a_sociedade_do_anel_2001.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"   onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-2" class="item_interno" style="background-image: url(/img/senhor_dos_aneis/as_duas_torres_2002.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle"  onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div id="id1-1" class="item_interno" style="background-image: url(/img/senhor_dos_aneis/o_retorno_do_rei_2003.jpg);">
+                    <a class="icon" style="position: absolute;"><i  class="far fa-play-circle" onclick="hidden_play(this)"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>

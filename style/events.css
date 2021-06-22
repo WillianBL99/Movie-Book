@@ -1,0 +1,31 @@
+/* responsavel por alterçõs proveniente de interações com os compoentes da página.*/
+
+:root {
+    --cor_fundo: #141414;
+    --cor_logo: #1809e5;
+    --option_menu: #aaa;
+    --option_menu_mouse: #fff;
+    --cor_texto: #fff;
+    --largura: 0px;
+    --opaco: #ececec8c;
+}
+
+/*Altera a cor dos botões da barra de menu*/
+header .option_menu a:hover {
+    color: var(--option_menu_mouse);
+}
+
+.botao:hover{
+    background-color: var(--cor_texto);
+    color: var(--cor_fundo);
+}
+
+.container .botao:hover{
+    background-color: var(--cor_texto);
+    color: var(--cor_fundo);
+}
+
+.item_interno i:hover{
+    transition: 0.3s;
+    color: var(--opaco);
+}

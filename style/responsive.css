@@ -1,0 +1,63 @@
+
+
+
+@media screen and (max-width:700px){
+
+
+    header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+ 
+    .filme_principal .titulo {
+        font-size: 230%;
+        margin-top: 0;
+    } 
+    .filme_principal .titulo_describe {
+        font-size: 130%;
+    } 
+
+    .container_audiolivro {
+        display: none;
+        transition: 3s ease all;
+    }
+
+    .filme_principal .botao:nth-child(2){
+        display: initial;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .filme_principal .titulo {
+        font-size: 230%;
+        margin-top: 0;
+    } 
+    .filme_principal .titulo_describe {
+        font-size: 130%;
+    }      
+}
+
+@media screen and (max-width:350px){
+    .botoes{
+        width: 98%;
+    }
+
+    main .filme_principal .descricao {
+        margin-bottom: 5px;
+    }     
+}

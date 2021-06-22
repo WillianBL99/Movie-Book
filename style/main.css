@@ -1,0 +1,209 @@
+:root {
+    --cor_fundo: #141414;
+    --cor_logo: #1809e5;
+    --option_menu: #aaa;
+    --option_menu_mouse: #fff;
+    --cor_texto: #fff;
+    --largura: 0px;
+}
+
+@font-face {
+    font-family: HarryPotter;
+    src: url(/font/HarryPotter/HARRYP__.TTF);
+}
+
+@font-face {
+    font-family: Quantom;
+    src: url(/font/quantum_4/Quantum.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cor_fundo);
+    font-family: Arial, times, serif;
+    color: var(--cor_texto);
+    min-width: 330px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+header .container .logo {
+    color: var(--cor_logo);
+    font-family: Quantom;
+    font-size: 50px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+header .option_menu a{
+    text-decoration: none;
+    color: var(--option_menu);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header .option_menu a:hover {
+    color: var(--option_menu_mouse);
+}
+
+/*modificações em filme principal*/
+
+main .filme_principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url('/img/Harry_Potter/capa_a_pedra_filosofal.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center;   
+}
+
+.filme_principal .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 5px;
+}
+
+.filme_principal .titulo {
+    font-size: 300%;
+    margin-top: 15%;
+    font-family: HarryPotter;
+    text-transform: uppercase;
+}
+.filme_principal .titulo_describe {
+    font-size: 150%;
+    font-family: arial, times;
+    text-transform: uppercase;
+}
+
+main .filme_principal .descricao {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    text-align: justify;
+    max-width: 365px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.5);
+    color: var(--cor_texto);
+    border: none;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:nth-child(2) {
+    display: none;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+/* carrocel de filmes*/
+
+.carrocel_filmes {
+    margin-top: 3px;
+}
+
+.item {
+    background-size: cover;
+}
+/* 
+.item img {
+    text-justify:newspaper;
+} */
+
+.linhas .item_interno{
+    background-size: cover;
+    padding: 75% 25%;
+    text-orientation: center;
+    
+}
+
+.carrocel_filmes .icon i{
+    cursor: pointer;
+    transition: 0.3s;
+    color: transparent;
+    font-size: 50px;
+    margin-left: -35%;
+    margin-top: -140%;
+    padding: 100%;
+}
+
+
+
+/*designer livro*/
+
+.container_audiolivro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 75%;
+    width: 13rem;
+    margin-right: 15px;
+}
+
+.container_audiolivro .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,.5);
+    height: 83%;
+    width: 100%;
+    margin: 0;
+}
+
+.container_audiolivro .container:nth-child(2) {
+    height: 15%;
+}
+
+.container_audiolivro h4 {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: var(--cor_texto);
+    text-align: center;
+}
+
+.container_audiolivro .container button {
+    margin-left: 15px;
+    background-color:  transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: var(--cor_texto);
+}
+
+.container_audiolivro .container button i{
+    margin-right: 8px;
+}
+
+.filme_principal .container img {
+    height: 60%;
+}
